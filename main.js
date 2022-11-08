@@ -137,7 +137,7 @@ for (let index = 0; index < posts.length; index++) {
     div10.append(div12);
 }
 
-
+//togliere evento dopo aver messo mi piace
 function RemoveSingleEvent(element){
     element.removeEventListener('click',Increase);
     element.addEventListener('click',Decrease);
@@ -158,12 +158,12 @@ function Increase(){
 for (let index = 0; index < likes.length; index++) {
     likes[index].addEventListener('click',Increase);
 }
-
+//riaggiunta listener per riaggiunta mi piace
 function ReAddEvent(element){
     element.removeEventListener('click',Decrease)
     element.addEventListener('click',Increase);
 }
-
+//funzione riduzione mi piace
 function Decrease(){
     let newArray=Array.from(likes);
     let index=newArray.indexOf(this);

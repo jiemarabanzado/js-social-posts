@@ -106,6 +106,7 @@ h1 {
 .like-button {
     display: inline-block;
     padding: 16px;
+    border: none;
     border-radius: 8px;    
     text-decoration: none;
     color: #404040;
@@ -122,4 +123,7 @@ h1 {
 .like-button--liked {
     color: #0CD977;
     cursor: default;
+}
+.blue{
+    color:rgb(39, 90, 241)
 }
